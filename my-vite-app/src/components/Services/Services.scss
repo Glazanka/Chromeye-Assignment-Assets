@@ -1,0 +1,20 @@
+@import "../../main_css/variables";
+
+#services {
+    padding: 40px;
+}
+
+.sub_icons {
+    width: 40px;
+}
+
+.container{
+    @include flex(space-between,center,column);
+    height: 100%;
+
+    .cell {
+        padding: 0px 0;
+        height: 70px;
+        @include flex(center,center,row);
+    }
+}

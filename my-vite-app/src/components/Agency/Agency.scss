@@ -1,0 +1,51 @@
+@import "../../main_css/variables";
+
+.dropdown {
+    @include flex(center, center, column);
+    height: 500px;
+}
+
+.dropdown-header {
+    cursor: pointer;
+    transition: color 0.3s;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 0;
+
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+.dropdown-content {
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    background: #f9f9f9;
+    margin: 10px 0;
+    border-radius: 5px;
+
+    p {
+        margin: 0;
+        line-height: 1.6;
+    }
+}
+
+.open-dropdown {
+    max-height: 200px;
+    opacity: 1;
+    visibility: visible;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.arrow {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,7 @@
+@import "../../main_css/variables";
+
+footer {
+    padding: 30px 30px !important;
+    height: max-content;
+    @include flex(center,center,row);
+}

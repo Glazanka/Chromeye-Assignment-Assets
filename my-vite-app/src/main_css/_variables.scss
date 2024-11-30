@@ -1,0 +1,52 @@
+$action-color: #00BAFF;
+
+section {
+    scroll-margin-top: 100px;
+}
+
+.bold{
+    font-weight: bold;
+}
+.blue {
+    color: #1C73A8;
+}
+
+.button {
+    background-color: $action-color;
+    border-radius: 0.3em;
+    box-shadow: 0 0 3px -1px black;
+
+    &:hover {
+        background-color: darken($action-color, 10%);
+    }
+}
+
+.request-call {
+    background-color: #646464;
+
+    &:hover {
+        background-color: #333333;
+    }
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 44px;
+}
+
+.description {
+    width: 400px;
+    text-align: center;
+}
+
+.links {
+    color: #646464;
+    font-weight: 600;
+}
+
+@mixin flex($justify-content, $align-items, $flex-direction) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+}
